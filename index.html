@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Josue Guevara — Perfil</title>
+  <style>
+    :root{
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #98a0b3;
+      --accent: #7c5cff;
+      --accent-2: #00d4ff;
+      --glass: rgba(255,255,255,0.03);
+      --glass-2: rgba(255,255,255,0.02);
+      --success: #22c55e;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #061124 0%, #071428 40%, #051225 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+      padding:40px;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{
+      width:100%;
+      max-width:980px;
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      padding:28px;
+      box-shadow: 0 6px 30px rgba(2,8,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+      margin-bottom:18px;
+    }
+
+    header{
+      display:flex;
+      gap:20px;
+      align-items:center;
+    }
+
+    .avatar{
+      width:110px;
+      height:110px;
+      border-radius:14px;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:40px;
+      color:white;
+      flex-shrink:0;
+      box-shadow: 0 6px 20px rgba(124,92,255,0.18), inset 0 -6px 30px rgba(0,0,0,0.2);
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+      letter-spacing: -0.02em;
+    }
+    p.lead{
+      margin:6px 0 0 0;
+      color:var(--muted);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:18px;
+      margin-top:16px;
+    }
+
+    .section-title{
+      color:var(--accent-2);
+      font-weight:600;
+      margin:0 0 8px 0;
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+
+    .skills-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .chip{
+      background:var(--glass);
+      padding:8px 12px;
+      border-radius:999px;
+      color:#dce9ff;
+      font-weight:600;
+      font-size:13px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .card.highlight{
+      background: linear-gradient(180deg, rgba(124,92,255,0.06), rgba(0,212,255,0.02));
+      border: 1px solid rgba(124,92,255,0.12);
+      color: #eaf5ff;
+    }
+
+    .right{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .meta{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:8px;
+    }
+
+    ul{margin:0;padding-left:18px}
+    li{margin:6px 0}
+
+    .cta{
+      display:inline-block;
+      margin-top:12px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#071025;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+    }
+
+    .footer{
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+      margin-top:8px;
+    }
+
+    .card.small{
+      padding:16px;
+    }
+
+    .progress{
+      background:var(--glass-2);
+      height:10px;
+      border-radius:999px;
+      overflow:hidden;
+      margin-top:8px;
+    }
+
+    .prog-fill{
+      height:100%;
+      background: linear-gradient(90deg,var(--accent),var(--accent-2));
+    }
+
+    @media (max-width:920px){
+      .grid{grid-template-columns:1fr; }
+      header{flex-direction:row; gap:12px;}
+      .avatar{width:88px;height:88px;font-size:32px}
+    }
+
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <header>
+        <div class="avatar">JG</div>
+        <div>
+          <h1>👋 ¡Hola! Soy Josue Guevara</h1>
+          <p class="lead">Estudiante de Ingeniería en Software | Scrum Master (CertiProf) | Desarrollador Backend en transición hacia Big Data, software científico y modelos de IA.</p>
+        </div>
+      </header>
+
+      <div class="grid" style="margin-top:20px">
+        <div>
+          <div class="card small">
+            <h3 class="section-title">🎓 Sobre mí</h3>
+            <p style="color:var(--muted);margin:8px 0 0 0">
+              Estudio Ingeniería en Software en la Universidad Técnica de Ambato (UTA). Como Scrum Master certificado, me enfoco tanto en el liderazgo de equipos ágiles como en la entrega técnica. Mi fortaleza principal es el desarrollo Backend, aunque actualmente avanzo hacia especializaciones en Big Data, software científico y desarrollo de modelos de inteligencia artificial.
+            </p>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 class="section-title">🛠️ Habilidades Técnicas</h3>
+
+            <h4 style="margin:10px 0 6px 0;color:var(--muted)">Lenguajes</h4>
+            <div class="skills-list">
+              <span class="chip">C#</span>
+              <span class="chip">Java</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">PHP</span>
+            </div>
+
+            <h4 style="margin:10px 0 6px 0;color:var(--muted)">Desarrollo Web & SQL</h4>
+            <div class="skills-list">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">SQL</span>
+            </div>
+
+            <h4 style="margin:10px 0 6px 0;color:var(--muted)">Frameworks / Librerías</h4>
+            <div class="skills-list">
+              <span class="chip">Next.js</span>
+              <span class="chip">Laravel</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">React</span>
+            </div>
+
+            <h4 style="margin:10px 0 6px 0;color:var(--muted)">Bases de datos</h4>
+            <div class="skills-list">
+              <span class="chip">MongoDB</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">Oracle</span>
+              <span class="chip">Prisma</span>
+            </div>
+
+            <h4 style="margin:10px 0 6px 0;color:var(--muted)">Herramientas</h4>
+            <div class="skills-list">
+              <span class="chip">Docker</span>
+              <span class="chip">Docker Compose</span>
+            </div>
+          </div>
+
+          <div class="card highlight" style="margin-top:14px">
+            <h3 class="section-title">🌟 Experiencia & Enfoque</h3>
+            <p style="margin:8px 0 0 0">
+              He participado en proyectos que van desde aplicaciones web hasta procesos de integración con bases de datos complejas. Me centro en entender a fondo las necesidades del usuario para entregar soluciones robustas, mantenibles y escalables.
+            </p>
+
+            <ul style="margin-top:10px;color:#eaf4ff">
+              <li>🖥️ Desarrollo de aplicaciones Backend enfocadas en rendimiento y fiabilidad.</li>
+              <li>🛠️ Diseño e implementación de arquitecturas orientadas a microservicios.</li>
+              <li>📊 Gestión y análisis de datos con herramientas modernas.</li>
+            </ul>
+          </div>
+
+          <div class="card" style="margin-top:14px">
+            <h3 class="section-title">🚀 Objetivos Futuros</h3>
+            <p style="margin:8px 0 0 0;color:var(--muted)">
+              Mi interés en Big Data y software científico va más allá de lo técnico: busco contribuir al avance de la ciencia, especialmente en astrofísica. Aspiro a colaborar con observatorios y centros de investigación, procesando y analizando grandes volúmenes de datos astronómicos y desarrollando herramientas que impulsen descubrimientos científicos.
+            </p>
+
+            <ul style="margin-top:10px;color:#eaf4ff">
+              <li>Contribuir en proyectos científicos y observatorios astronómicos.</li>
+              <li>Desarrollar pipelines y sistemas para el análisis de datos a gran escala.</li>
+              <li>Seguir profundizando en IA aplicada a problemas científicos.</li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="right">
+          <div class="card small">
+            <h4 class="section-title">Contacto</h4>
+            <p style="margin:6px 0 0 0;color:var(--muted)">¿Quieres colaborar o saber más? Escríbeme:</p>
+            <p style="margin:8px 0 0 0;font-weight:700"><a href="mailto:el.jdragon@gmail.com" style="color:var(--accent-2);text-decoration:none">el.jdragon@gmail.com</a></p>
+            <a class="cta" href="mailto:el.jdragon@gmail.com">Enviar correo</a>
+          </div>
+
+          <div class="card small">
+            <h4 class="section-title">Estado profesional</h4>
+            <div style="margin-top:6px;color:var(--muted)">Especialización en progreso</div>
+            <div style="margin-top:10px;color:#dff8ef">Backend</div>
+            <div class="progress" aria-hidden><div class="prog-fill" style="width:86%"></div></div>
+
+            <div style="margin-top:10px;color:#fdeedc">Big Data & Software Científico</div>
+            <div class="progress" aria-hidden><div class="prog-fill" style="width:40%"></div></div>
+
+            <div style="margin-top:10px;color:#f4e6ff">IA aplicada a Ciencia</div>
+            <div class="progress" aria-hidden><div class="prog-fill" style="width:28%"></div></div>
+          </div>
+
+          <div class="card small">
+            <h4 class="section-title">Quick facts</h4>
+            <div class="meta">
+              <div style="min-width:120px;color:var(--muted)">Universidad</div><div style="font-weight:700">UTA (FISEI)</div>
+            </div>
+            <div class="meta" style="margin-top:8px">
+              <div style="min-width:120px;color:var(--muted)">Certificación</div><div style="font-weight:700">Scrum Master — CertiProf</div>
+            </div>
+            <div class="meta" style="margin-top:8px">
+              <div style="min-width:120px;color:var(--muted)">Stack preferido</div><div style="font-weight:700">Node / C# / PostgreSQL</div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+
+      <div class="footer">Gracias por visitar mi perfil — siempre abierto a nuevas ideas y colaboraciones. 🚀</div>
+    </section>
+  </main>
+</body>
+</html>
